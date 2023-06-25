@@ -16,5 +16,10 @@ import {  } from '@angular/forms';
 
 export class AppComponent {
   title = 'zm-m';
+    selectedTab = 0;
+
+  tabChanged(index: number): void {
+    this.selectedTab = index;
+  }
 
 }
